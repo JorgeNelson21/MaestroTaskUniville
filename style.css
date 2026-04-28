@@ -1,0 +1,125 @@
+:root {
+    --fundo-pagina: #282a36;
+    --fundo-caixa: #44475a;
+    --texto-principal: #f8f8f2;
+    --texto-secundario: #6272a4;
+    --cor-destaque: #bd93f9;
+    --cor-concluido: #50fa7b;
+    --cor-erro: #ff5555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo-pagina);
+    color: var(--texto-principal);
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto; 
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cabecalho h1 {
+    color: var(--cor-destaque);
+    font-size: 3rem;
+}
+
+.cabecalho p {
+    color: var(--texto-secundario);
+}
+
+.area-input {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.area-input input {
+    width: 70%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--fundo-caixa);
+    color: var(--texto-principal);
+    font-size: 16px;
+}
+
+.area-input button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--cor-destaque);
+    color: var(--fundo-pagina);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quadro-tarefas {
+    background-color: var(--fundo-caixa);
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 300px;
+}
+
+.cartao-tarefa {
+    background-color: var(--fundo-pagina);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid var(--cor-destaque);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cartao-tarefa p {
+    word-break: break-word; 
+}
+
+
+.tarefa-concluida {
+    border-left-color: var(--cor-concluido);
+    opacity: 0.6;
+}
+
+.tarefa-concluida p {
+    text-decoration: line-through; 
+    color: var(--texto-secundario);
+}
+
+.rodape-cartao {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px;
+}
+
+.rodape-cartao button {
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-concluir {
+    background-color: var(--cor-destaque);
+    color: var(--fundo-pagina);
+}
+
+.btn-excluir {
+    background-color: var(--cor-erro);
+    color: white;
+}
